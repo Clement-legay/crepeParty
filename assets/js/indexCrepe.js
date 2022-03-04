@@ -105,15 +105,6 @@ for (let i = 0; i < elements.length; i++) {
     let name = setElement("h5", {html:elements[i].name}, col1)
     let num = setElement("p", {id:elements[i].name + "-cou", text: `${howMany(elements[i])} x ${elements[i].soldBy} ${elements[i].unit}`}, col1)
     let img = setElement("img", {src: elements[i].image, style:"width: 50px; height:50px"}, col2)
-    // <v-row>
-    //     <v-col cols="8">
-    //         <p>{{element.name}}</p>
-    //         <p>{{element.name === "Lait" ? (element.base * nombre).toFixed(2) : element.base * nombre}}{{element.unit}}</p>
-    //     </v-col>
-    //     <v-col cols="4">
-    //         <v-img :src="element.image" height="50" width="50"></v-img>
-    //     </v-col>
-    // </v-row>
 }
 
 // events
